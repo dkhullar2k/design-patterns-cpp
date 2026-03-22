@@ -17,7 +17,7 @@ using namespace std;
 class FileSystemComponent{ // Component
     public:
     virtual void display()=0;
-    virtual ~FileSystemComponent(){}
+    virtual ~FileSystemComponent()=default;
 };
 class File: public FileSystemComponent{ //Leaf
     string name;
